@@ -1,0 +1,20 @@
+# Never commit firmware, PUP/rootfs content, kernel dumps, payloads, keys,
+# console-specific media, or personal data.
+*.PUP
+*.pup
+*.dec
+*.bin
+*.img
+*.elf
+*.self
+*.sprx
+*.gz
+*.zip
+*.7z
+*.rar
+*.xlsx
+*.log
+*.jpeg
+*.jpg
+*.png
+.DS_Store

@@ -1,0 +1,43 @@
+name,offset_820,offset_800,same_as_800,validation,notes
+VMSPACE_VM_VMID,0x1E4,0x1E4,yes,data / not behaviorally validated,Structure offset from the inherited table; not validated.
+VMSPACE_VM_PMAP,0x1D8,0x1D8,yes,data / not behaviorally validated,Structure offset from the inherited table; not validated.
+ACPIGBL_FACS,0x38F75A0,0x38F7590,no,data / not behaviorally validated,Known 8.20 data offset; used as the FACS trigger.
+IDT,0x3B23DF0,0x3B23DF0,yes,data / not behaviorally validated,8.20 IDT; gate/IST work proven on this console.
+COMMON_TSS,0x3B26AD0,0x3B26AD0,yes,data / not behaviorally validated,8.20 TSS; all 16 IST6 rows were saved and restored.
+FUN_MEMCPY,0x282FA0,0x282FA0,yes,data / not behaviorally validated,Kernel memcpy; used by the kernel shellcode.
+GAD_ADD_RSP_28_POP_RBP_RET,0x9A4AD4,0x9A37C4,no,data / not behaviorally validated,
+GAD_IRETQ,0x24738D,0x24738D,yes,proven,
+GAD_POP_RAX_RET,0x2027D0,0x2027D0,yes,proven,
+GAD_POP_RDI_RET,0x1E5B78,0x1E5B78,yes,proven,
+GAD_POP_RSI_RET,0x1A66B0,0x1A66B0,yes,unproven,
+GAD_POP_RDX_RET,0x6720EC,0x574C4A,no,unproven,
+GAD_POP_RCX_RET,0x2D10C5,0x2D10C5,yes,proven,
+GAD_POP_RSP_RET,0x2008F3,0x24A1F0,no,proven,
+KERNEL_CODE_CAVE,0xC63000,0xC62000,no,data / not behaviorally validated,Kernel code cave; used for wake-chain experiments.
+FUN_PRINTF,0x4C18C0,0x4C13E0,no,data / not behaviorally validated,
+FUN_SMP_RENDEZVOUS,0xABFCD0,0xABE8D0,no,data / not behaviorally validated,Kernel function offset; not part of the wake test.
+FUN_SMP_NO_RENDEVOUS_BARRIER,0x2027D1,0x2027D1,yes,data / not behaviorally validated,Kernel function offset; not part of the wake test.
+HV_CODE_CAVE_PA,0x62806F00,0x62806F00,yes,data / not behaviorally validated,Physical address from the inherited table; not used in this work.
+HV_HANDLE_VMEXIT_PA,0x628457AE,0x628457AE,yes,data / not behaviorally validated,Physical address from the inherited table; not used in this work.
+KERNEL_CFI_CHECK,0x478690,0x4781D0,no,data / not behaviorally validated,
+G_VBIOS,0x3D3BA40,0x3D3BA40,yes,data / not behaviorally validated,
+FUN_TRANSMITTER_CONTROL,0xBBBDC0,0xBBA930,no,data / not behaviorally validated,
+FUN_MP3_INITIALIZE,0x9D3D80,0x9D2A70,no,data / not behaviorally validated,
+FUN_MP3_INVOKE,0x376E50,0x376E50,yes,data / not behaviorally validated,
+HV_MP_STARTUP_CALL,0xBC40F0,0xBC2C60,no,data / not behaviorally validated,"0xBC40F0 is the hc 0x10 wrapper, not hc 0x0F. 0xBC40D0 is the hc 0x0F candidate; not validated."
+MP_STARTUP_INIT_VECTOR,0x2A5E28,0x2A5860,no,data / not behaviorally validated,8.20 AP start vector; not independently validated.
+DATA_CAVE,0x2ACC000,0x2ACC000,yes,data / not behaviorally validated,Kernel data cave; used for the 0x9CA20F hook oracle.
+GAD_PIVOT_ADD_RSP28_RET,0x23C05E,0x23C05E,yes,proven,
+GAD_STORE_RDI8_RCX_RET,0x2749FF,0x2749FF,yes,proven,
+GAD_SET_DR7_RET,0x9C7926,0x9C6616,no,ambiguous,
+GAD_STORE_RCX_RAX_RET,0x3061A2,0x3061A2,yes,rejected,
+GAD_MOV_RAX_RDI_RET,0x24DC71,0x24DC71,yes,unproven,
+GAD_REP_MOVSB_RET,0x29F4C7,0x29F4C7,yes,unproven,
+GAD_CLD_RET,0x37BB87,0x37BB87,yes,data / not behaviorally validated,
+GAD_RET_TRAMP,0x2027D1,0x2027D1,yes,proven,
+GAD_DBREG_RESUME,0x2408F8,0x2408F8,yes,proven,
+RESERVED_56,0x23FE92,0x23FE92,yes,data / not behaviorally validated,
+RESERVED_57,1,1,yes,data / not behaviorally validated,
+PS5_WIFI_FW_OFFSET,0x145B170,0x145B0B0,no,data / not behaviorally validated,
+PS5_WIFI_FW_SIZE,0x79924,0x79924,yes,data / not behaviorally validated,
+HV_EFI_MAP_ROOT,0x3D510B8,0x3D510B8,yes,data / not behaviorally validated,

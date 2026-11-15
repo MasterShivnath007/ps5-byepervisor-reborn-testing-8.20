@@ -1,0 +1,42 @@
+# NOTICE
+
+This repository contains original research notes and scripts by
+**MasterShivnath007**. It does **not** contain Sony firmware, PUP files,
+decrypted PUP content, rootfs images, kernel memory dumps, keys, or exploit
+binaries.
+
+## Upstream projects referenced
+
+- **ps5-linux-loader** — https://github.com/ps5-linux/ps5-linux-loader
+- **Byepervisor Reborn** — https://github.com/EchoStretch/Byepervisor-Reborn
+- **Byepervisor (original)** — https://github.com/PS5Dev/Byepervisor
+- **ps5-hv-writeups** (the S3-resume `khv_startup_mp` writeup) —
+  https://github.com/soniciso1/ps5-hv-writeups
+- **ps5-13.60-kernel-dump** — https://github.com/terrafirma2021/ps5-13.60-kernel-dump
+- **ps5-pup-decrypt** — https://github.com/zecoxao/ps5-pup-decrypt
+- **ps5-pup-unpacker** — https://github.com/zecoxao/ps5-pup-unpacker
+- **ps5-payload-sdk** — https://github.com/ps5-payload-dev/sdk
+- **ps5-memory-dumper** — https://github.com/ramalhoboss/ps5-memory-dumper
+- **kstuff-lite** — https://github.com/EchoStretch/kstuff-lite
+
+The names and trademarks of these projects belong to their respective authors.
+No upstream source code is vendored in this repository; the links are provided
+for attribution and reproducibility.
+
+## Trademarks
+
+PlayStation, PS5, Sony and related marks are trademarks of Sony Interactive
+Entertainment Inc. This project is not affiliated with, endorsed by, or
+sponsored by Sony. The names are used only to describe the research target.
+
+## No warranty
+
+The information is provided “as is”, without warranty of any kind. Running
+research payloads can crash or brick a console. You are responsible for your
+own hardware and for complying with the law.
+
+## License scope
+
+The MIT license in `LICENSE` applies to the original notes and scripts in this
+repository. Upstream projects, trademarks, and any third-party material remain
+under their own terms.
