@@ -1,9 +1,9 @@
 # Findings
 
 **Status: negative result / data-blocked.** No AP entry, no NPT disable, no
-kernel-text read, no Linux boot. The game SSD was not written. The final wake
-test restored the `#DB` gate and all 16 TSS IST6 rows and returned the console
-to Orbis.
+kernel-text read, no Linux boot. The game SSD was not written. The wake test
+restored the `#DB` gate and all 16 TSS IST6 rows and returned the console to
+Orbis.
 
 ## Summary
 

@@ -10,7 +10,7 @@ import socket
 import sys
 import time
 
-IP = os.environ.get("PS5_IP", "192.0.2.10")
+IP = os.environ.get("PS5_IP")
 PORT = int(os.environ.get("PS5_PORT", "9021"))
 HOLD_SECONDS = int(os.environ.get("HOLD_SECONDS", "60"))
 IDLE_SECONDS = int(os.environ.get("IDLE_SECONDS", "15"))
@@ -19,6 +19,9 @@ IDLE_SECONDS = int(os.environ.get("IDLE_SECONDS", "15"))
 def main() -> int:
     if len(sys.argv) != 2:
         print(f"usage: {sys.argv[0]} <payload.elf>", file=sys.stderr)
+        return 2
+    if not IP:
+        print("PS5_IP is required", file=sys.stderr)
         return 2
     path = sys.argv[1]
     data = open(path, "rb").read()

@@ -12,8 +12,8 @@ boot.
 ## Status
 
 - No AP entry, no NPT disable, no kernel-text read, no Linux boot.
-- The game SSD was not written. The console returned to Orbis after the final
-  wake test.
+- The game SSD was not written. The console returned to Orbis after the wake
+  test.
 - The 8.20 route is data-blocked: the pre-loop trigger, the 8.20 kernel
   text/AP ABI, and the stopped-CPU mask are missing.
 

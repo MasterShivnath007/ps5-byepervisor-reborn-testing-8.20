@@ -17,11 +17,11 @@ console.
 ## `send-payload-hold.py`
 
 Sends an ELF payload to an elfldr on TCP 9021 and keeps the socket open while
-it runs. The console address is taken from the environment; the default is a
-TEST-NET address (not a real console).
+it runs. The console address is required from the environment; there is no
+default.
 
 ```sh
-PS5_IP=<console-ip> PS5_PORT=9021 \
+PS5_IP=<console-address> PS5_PORT=9021 \
   python3 tools/send-payload-hold.py payload.elf
 ```
 

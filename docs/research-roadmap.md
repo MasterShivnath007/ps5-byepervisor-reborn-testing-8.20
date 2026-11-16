@@ -93,14 +93,14 @@ guess.
 └─ no
    ├─ public/trusted 8.20 live text dump? → disassemble → continue
    ├─ live text primitive? → dump text → continue
-   └─ no → stop console launches; use the supported 11.60 path or wait for an artifact
+   └─ no → stop console launches; wait for a verified 8.20 artifact or a new primitive
 ```
 
 ## Alternative
 
-The supported 11.60 path is hardware-validated for Byepervisor Reborn and
-supported by `ps5-linux`. It is the high-probability route to Linux on this
-console, at the cost of leaving 8.20.
+If the 8.20 route stays blocked, the remaining options are a verified 8.20
+dump or offset set from a trustworthy source, or an HV-side VMEXIT/NPT
+primitive. Neither is a ready path.
 
 ## Required artifacts
 
